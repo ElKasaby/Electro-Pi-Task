@@ -4,7 +4,7 @@ This testing playbook outlines the manual and automated validation procedures fo
 
 ---
 
-## 🛠️ Prerequisites & Setup
+## Prerequisites & Setup
 
 Ensure the application environment and database are initialized before testing.
 
@@ -43,7 +43,7 @@ Ensure the application environment and database are initialized before testing.
 
 ---
 
-## 🧑‍💻 Manual Endpoint Testing Guide
+## Manual Endpoint Testing Guide
 
 All API requests must use the base URL: `http://localhost:3000/api/v1`.
 
@@ -172,7 +172,7 @@ All API requests must use the base URL: `http://localhost:3000/api/v1`.
 
 ---
 
-## 📖 Automated Testing Collection & UI
+## Automated Testing Collection & UI
 
 ### 1. Interactive Swagger Documentation UI
 1. Start the server: `npm run dev`
@@ -187,7 +187,7 @@ All API requests must use the base URL: `http://localhost:3000/api/v1`.
 
 ---
 
-## 🧪 Automated Testing Runner
+## Automated Testing Runner
 
 The codebase contains a full test suite with Unit tests (mock DB context) and E2E tests (real database execution).
 
@@ -206,7 +206,7 @@ The codebase contains a full test suite with Unit tests (mock DB context) and E2
 
 ---
 
-## 🐳 Dockerized Execution Verification
+## Dockerized Execution Verification
 
 To verify the system runs in isolation (containerized):
 

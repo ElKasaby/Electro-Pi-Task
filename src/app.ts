@@ -3,20 +3,17 @@ import express, { Request, Response } from 'express';
 import cors from 'cors';
 import helmet from 'helmet';
 import rateLimit from 'express-rate-limit';
-import dotenv from 'dotenv';
 import swaggerUi from 'swagger-ui-express';
 import yaml from 'js-yaml';
 import fs from 'fs';
 import path from 'path';
 
+import './config/env';
 import logger from './middlewares/logger';
 import authRoutes from './routes/auth.routes';
 import projectRoutes from './routes/project.routes';
 import taskRoutes from './routes/task.routes';
 import errorHandler from './middlewares/errorHandler';
-
-// Load environment variables
-dotenv.config();
 
 const app = express();
 
